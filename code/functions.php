@@ -31,17 +31,17 @@ function printForm(array $categories)
 {
     echo '<form action="" method="post">
 		<p>Введите email<p>
-    	<input type="email" name="email"/>
+        <input type="email" name="email"/>
     	<p>Выберите категорию<p>
     	<select name="category">'
-        . getCategoryOptionsForSelectField($categories) .
-        '</select>
+            . getCategoryOptionsForSelectField($categories) .
+            '</select>
     	<p>Введите заголовок объявления<p>
     	<input type="text" name="header"/>
     	<p>Введите текст объявления<p>
     	<textarea rows="10" cols="40" name="content"></textarea>
     	<input type="submit" value="Отправить">
-  	  </form>';
+  	</form>';
 }
 
 function getCategoryOptionsForSelectField(array $categories): string
